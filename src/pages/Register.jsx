@@ -42,7 +42,7 @@ const RegisterPage = () => {
     onSubmit: (values) => {
       setIsLoading(true); // Start loading when form is submitted
       axios
-        .post('http://localhost:3000/api/v1/ecommerce/auth/register', {
+        .post(`${Host}/api/v1/ecommerce/auth/register`, {
           name: values.name,
           email: values.email.trim(),
           password: values.password,
