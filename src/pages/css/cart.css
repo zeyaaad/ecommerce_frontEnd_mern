@@ -1,0 +1,267 @@
+/* Main container styling */
+.container {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+}
+
+/* Cart layout: on larger screens, cart details on the left and items on the right */
+.contcart {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap; /* Enables wrapping for responsive design */
+}
+
+/* Cart info/details on the left */
+.info1 {
+    width: 30%; /* Take up 30% of the container width on large screens */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: fit-content;
+    padding: 30px;
+}
+
+/* Total Price and Cart Information */
+.info1 h1 {
+    font-size: 1.5rem;
+    color: #28a745;
+    margin-bottom: 20px;
+}
+
+/* Coupon Input Area */
+.coupons {
+    display: flex;
+    margin-top: 20px;
+}
+
+.coupons input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    font-size: 1rem;
+}
+.coupons input:focus{
+    outline: none !important;
+    border: 1px solid #ccc !important;
+}
+.coupons button {
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.coupons button:hover {
+    background-color: #218838;
+}
+
+/* Checkout buttons */
+.cartActions {
+    margin-top: 20px;
+}
+
+.cartActions button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+}
+
+.checkout-cash {
+    background-color: #28a745;
+}
+
+.checkout-cash:hover {
+    background-color: #218838;
+}
+
+.checkout-credit {
+    background-color: #dc3545;
+}
+
+.checkout-credit:hover {
+    background-color: #c82333;
+}
+.btn-danger{
+    background-color: #c82333 !important;
+    color: white !important;
+}
+
+/* Cart items on the right */
+.cartItems {
+    width: 67%; /* Take up 65% of the container width */
+}
+
+/* Individual cart item styling */
+.cartitem {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.cartitem .data {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.cartitem img {
+    margin-right: 15px;
+    border-radius: 8px;
+}
+
+.cartitem .info p {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+/* Buttons for increasing or decreasing item quantity */
+.operations {
+    display: flex;
+    align-items: center;
+}
+
+.operations button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.operations button:hover {
+    background-color: #0056b3;
+}
+
+.operations span {
+    margin: 0 10px;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+/* Responsive design for mobile devices */
+@media (max-width: 968px) {
+    /* Stack the cart info and items vertically on mobile */
+    .contcart {
+        flex-direction: column;
+    }
+    .container {
+        width: 100%;
+    }
+
+    .info1 {
+        width: 100%; /* Full width on mobile */
+        margin-bottom: 20px; /* Space between info and items */
+        position: static; /* Remove sticky behavior */
+    }
+
+    .cartItems {
+        width: 100%; /* Full width on mobile */
+    }
+
+    /* Ensure buttons and text elements scale well on mobile */
+    .coupons input, .coupons button {
+        font-size: 0.9rem;
+    }
+
+    .cartitem .info p, .operations span {
+        font-size: 1rem;
+    }
+
+    /* Reorder cart item sections for small screens */
+    .cartitem {
+        flex-direction: column; /* Stack cart item sections vertically */
+        align-items: center; /* Center align the content */
+    }
+
+    .cartitem img {
+        margin-bottom: 10px; /* Add space below the image */
+    }
+
+    .cartitem .data {
+        flex-direction: column; /* Stack data section vertically */
+        text-align: center;
+        margin-bottom: 10px; /* Add space between data and operations */
+    }
+
+    .operations {
+        justify-content: center; /* Center operations (quantity controls) */
+    }
+}
+/* Link to view offers */
+.view-offers {
+    margin-left: 10px;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.view-offers:hover {
+    text-decoration: underline;
+}
+
+/* Shipping info */
+.shipping-info {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shipping-text {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.shipping-info .fas {
+    font-size: 1.5rem;
+    color: #28a745;
+}
+
+/* Fixing .info1 on large screens but not mobile */
+@media (min-width: 968px) {
+    .info1 {
+        position: sticky;
+        top: 20px;
+    }
+}
+
+@media (max-width: 968px) {
+    .info1 {
+        position: static; /* Not fixed on mobile */
+    }
+}
+
+.disablead{
+    border-radius:5px ;
+    cursor:no-drop !important;
+    background-color: #787878 !important;
+    
+}
+/* Add these styles in your CSS file for modal */
+.modal {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  width: 300px;
+  margin: auto;
+}
+

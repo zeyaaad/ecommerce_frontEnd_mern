@@ -1,0 +1,122 @@
+/* Container for the wishlist */
+.wishlist-container {
+  width: 75% !important; 
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+
+/* Title of the wishlist */
+.wishlist-title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Message for empty wishlist */
+.empty-wishlist {
+  font-size: 18px;
+  color: #666;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Container for wishlist items */
+.wishlist-items {
+  width: 100% !important;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Styling for each item in the wishlist */
+.wishlist-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+}
+.wishlist-item .data {
+  display: flex;
+  align-items: center;
+}
+@media  (max-width:900px) {
+  .wishlist-container{
+    width: 100% !important;
+  }
+  .wishlist-items{
+    width: 100% !important;
+  }
+   .wishlist-items img{
+    margin: 0 auto;
+  }
+  .wishlist-item ,.wishlist-item .data {
+    width: 100% !important;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+}
+.wishlist-item-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 15px;
+}
+
+.wishlist-item-details {
+  flex: 1;
+}
+
+.wishlist-item-details h3 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.wishlist-item-details p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+/* Remove button */
+.wishlist-remove-btn {
+  background-color: #ff4d4d;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.wishlist-remove-btn:hover {
+  background-color: #ff1a1a;
+}
+
+/* Button to add a product to the wishlist */
+.wishlist-add-btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #1e90ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.wishlist-add-btn:hover {
+  background-color: #0073e6;
+}

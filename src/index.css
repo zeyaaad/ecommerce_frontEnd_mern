@@ -1,0 +1,147 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.important{
+  color: rgb(7, 149, 244);
+  font-weight: 900;
+}
+
+.searchinput:focus{
+  outline: none !important;
+}
+
+.linksucess{
+  color: rgb(6, 61, 241);
+}
+
+.contUserData{
+  opacity: .8;
+  
+}
+
+.verfiycont{
+  width: 50%;
+  margin-top: 100px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 16px -10px black;
+  text-align: center;
+
+
+}
+.verfiycont a{
+  color: rgb(3, 29, 223);
+  text-decoration: underline;
+}
+.verfiycont a:hover{
+  transition: .2s;
+  text-decoration: none !important;
+}
+.resendemail{
+  color: rgb(3, 29, 223);
+  text-decoration: underline;
+}
+.resendemail:hover{
+  transition: .2s;
+  text-decoration: none !important;
+}
+@media(max-width:800px){
+  .verfiycont{
+    width: 100%;
+    margin-top: 30px;
+    border-radius: 3px;
+  }
+}
+
+
+/* CSS for modal */
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 50%;
+}
+@media(max-width:800px){
+  .modal-content{
+    width: 100% !important;
+  }
+}
+.error {
+  color: red;
+}
+
+.success {
+  color: green;
+}
+
+.importantt{
+  color: rgb(8, 102, 225);
+  font-weight: bold;
+}
+
+
+.registerPage{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+.registerPage .img {
+  box-shadow: 0px 0px 16px -10px black !important;
+}
+
+@media(max-width:800px){
+  .registerPage {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .img {
+    display: none !important;
+  }
+}
+
+
+.changeEmailCont{
+  width: 50%;
+  margin: 15px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px -10px black ;
+}
+
+.changeEmailCont input {
+  border: 1px solid rgb(53, 53, 53);
+  border-radius: 5px;
+}
+@media(max-width:900px){
+  .changeEmailCont{
+    width: 100%;
+  }
+}
+
+.dropdown-menu{
+  max-height: 450px;
+  overflow-y: auto;
+}
