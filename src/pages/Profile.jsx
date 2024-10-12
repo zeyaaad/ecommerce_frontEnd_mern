@@ -82,7 +82,7 @@ export default function Profile() {
             if (error.response?.data.message === "Incorrect current Password") {
                 toast.error("Incorrect Current Password");
             } else {
-                toast.error("Error changing password");
+                toast.error(error.response.data.message||"Error changing password");
             }
         } finally {
             setLoader(false);
