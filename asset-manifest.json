@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/front_Eco/static/css/main.476ea7f6.css",
+    "main.js": "/front_Eco/static/js/main.456cb3d4.js",
+    "static/js/453.0297a6b4.chunk.js": "/front_Eco/static/js/453.0297a6b4.chunk.js",
+    "index.html": "/front_Eco/index.html",
+    "main.476ea7f6.css.map": "/front_Eco/static/css/main.476ea7f6.css.map",
+    "main.456cb3d4.js.map": "/front_Eco/static/js/main.456cb3d4.js.map",
+    "453.0297a6b4.chunk.js.map": "/front_Eco/static/js/453.0297a6b4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.476ea7f6.css",
+    "static/js/main.456cb3d4.js"
+  ]
+}
