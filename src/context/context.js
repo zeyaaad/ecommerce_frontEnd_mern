@@ -12,7 +12,7 @@ const MyProvider = ({ children }) => {
   const[totalPrice,setTotalPrice]=useState(null)
     const[isLogIn,setIsLogIn]=useState(null)
   const [token,setToken]=useState(localStorage.getItem("user_token"));
-    const Host="http://localhost:3000";
+    const Host="https://ecommercoo.vercel.app";
 
 
   function getToken(){
