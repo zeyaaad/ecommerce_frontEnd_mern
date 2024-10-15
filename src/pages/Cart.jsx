@@ -237,7 +237,7 @@ export default function Cart() {
                                             <button onClick={Applycoupon}>Apply</button>
                                         </div>
                                         <div>
-                                            <Link to="/offers" className="view-offers">
+                                            <Link to="/coupons" className="view-offers">
                                                 View Available Offers
                                             </Link>
                                         </div>
